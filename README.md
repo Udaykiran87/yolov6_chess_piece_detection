@@ -44,6 +44,11 @@ names: ['bishop', 'black-bishop', 'black-king', 'black-knight', 'black-pawn', 'b
 ### Step 8: create weight folder and download yolov6s model weight from below path into weights folder
 https://github.com/meituan/YOLOv6/releases/download/0.1.0/yolov6s.pt
 
+### custom_training command
+```bash
+python tools/train.py --workers 1 --batch-size 8  --epochs 10 --conf configs/yolov6s_finetune.py --device 0 --data custom_dataset/dataset.yaml
+```
+
 
 # YOLOv6
 ## Introduction
