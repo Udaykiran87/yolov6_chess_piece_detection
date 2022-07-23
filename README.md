@@ -14,7 +14,7 @@ conda activate ./env
 
 ### Step 4: create dataset folder
 ```bash
-mkdir custom_datsets
+mkdir custom_datset
 ```
 ### Step 5: Download chess dataset from roboflow and extract under custom_daatset
 ```bash
