@@ -1,3 +1,45 @@
+### Step 1: Git clone
+```bash
+git clone https://github.com/Udaykiran87/yolov6_chess_piece_detection.git
+```
+### Step 2: create environment and install dependencies
+```bash
+bash init_setup.sh
+```
+
+### Step 3: Activate the environment
+```bash
+conda activate ./env
+```
+
+### Step 4: create dataset folder
+```bash
+mkdir custom_datset
+```
+### Step 5: Download chess dataset from roboflow and extract under custom_daatset
+```bash
+https://public.roboflow.com/object-detection/chess-full/24/download/mt-yolov6
+```
+### Step 6: rename the data.yaml to dataset.yaml under custom_datset
+```bash
+cd ./custom_datset && mv data.yaml datset.yaml 
+```
+
+### Step 7: chnage the content of dataset.yaml to as below
+```bash
+train: ../custom_dataset/images/train # train images
+val: ../custom_dataset/images/val # val images
+test: ../custom_dataset/images/test # test images (optional)
+
+# whether it is coco dataset, only coco dataset should be set to True.
+is_coco: False
+
+nc: 13
+names: ['bishop', 'black-bishop', 'black-king', 'black-knight', 'black-pawn', 'black-queen', 'black-rook', 'white-bishop', 'white-king', 'white-knight', 'white-pawn', 'white-queen', 'white-rook']
+
+```
+
+
 # YOLOv6
 ## Introduction
 
