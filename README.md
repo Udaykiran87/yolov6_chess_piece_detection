@@ -41,6 +41,8 @@ nc: 13
 names: ['bishop', 'black-bishop', 'black-king', 'black-knight', 'black-pawn', 'black-queen', 'black-rook', 'white-bishop', 'white-king', 'white-knight', 'white-pawn', 'white-queen', 'white-rook']
 
 ```
+### Step 8: create weight folder and download yolov6s model weight from below path into weights folder
+https://github.com/meituan/YOLOv6/releases/download/0.1.0/yolov6s.pt
 
 
 # YOLOv6
