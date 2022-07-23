@@ -25,6 +25,9 @@ https://public.roboflow.com/object-detection/chess-full/24/download/mt-yolov6
 cd ./custom_datsets && mv data.yaml dataset.yaml 
 ```
 
+### Step 6a: rename valid folder to val inside both images and labels folder manually.
+
+
 ### Step 7: chnage the content of dataset.yaml to as below
 ```bash
 train: ../custom_dataset/images/train # train images
