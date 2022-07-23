@@ -14,7 +14,7 @@ conda activate ./env
 
 ### Step 4: create dataset folder
 ```bash
-mkdir custom_datset
+mkdir custom_datsets
 ```
 ### Step 5: Download chess dataset from roboflow and extract under custom_daatset
 ```bash
@@ -22,7 +22,7 @@ https://public.roboflow.com/object-detection/chess-full/24/download/mt-yolov6
 ```
 ### Step 6: rename the data.yaml to dataset.yaml under custom_datset
 ```bash
-cd ./custom_datset && mv data.yaml datset.yaml 
+cd ./custom_datsets && mv data.yaml dataset.yaml 
 ```
 
 ### Step 7: chnage the content of dataset.yaml to as below
