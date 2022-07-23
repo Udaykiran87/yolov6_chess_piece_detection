@@ -1,6 +1,6 @@
 ### Step 1: Git clone
 ```bash
-git clone https://github.com/Udaykiran87/yolov6_chess_piece_detection.git
+git clone https://github.com/Udaykiran87/yolov6_chess_piece_detection.git && cd YOLOv6
 ```
 ### Step 2: create environment and install dependencies
 ```bash
