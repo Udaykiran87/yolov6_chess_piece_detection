@@ -44,10 +44,21 @@ names: ['bishop', 'black-bishop', 'black-king', 'black-knight', 'black-pawn', 'b
 ### Step 8: create weight folder and download yolov6s model weight from below path into weights folder
 https://github.com/meituan/YOLOv6/releases/download/0.1.0/yolov6s.pt
 
-### custom_training command
+### step 9: custom_training command
 ```bash
-python tools/train.py --workers 1 --batch-size 8  --epochs 10 --conf configs/yolov6s_finetune.py --device 0 --data custom_dataset/dataset.yaml
+python tools/train.py --workers 4 --batch-size 32  --epochs 100 --conf configs/yolov6s_finetune.py --device 0 --data custom_dataset/dataset.yaml
 ```
+
+### step 10: inference an image
+```bash
+python tools/infer.py --weights runs/train/exp5/weights/best_ckpt.pt --source custom_dataset/images/test/1c0060ef868bdc326ce5e6389cb6732f_jpg.rf.f02cd668d26a53d9bf001497992b3657.jpg --device 0 --view-img --yaml custom_dataset/dataset.yaml
+```
+
+### step 11: resume training
+```bash
+python tools/train.py --workers 4 --batch-size 32  --epochs 100 --conf configs/yolov6s_finetune.py --device 0 --data custom_dataset/dataset.yaml --resume
+```
+
 
 
 # YOLOv6
